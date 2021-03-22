@@ -1,13 +1,5 @@
 import asyncio
 
-
-#def run_server(host, port):
-#    return host, port
-
-
-#serv_host, serv_port = run_server()
-
-
 def put_serv(map_server, server_name, value, timestamp):
     if server_name in map_server:
         map_server[server_name].append((value, timestamp.strip()))
